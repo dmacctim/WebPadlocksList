@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add a Padlock</title>
+</head>
+<body>
+	<form action="addPadlockServlet" method="post">
+		Brand: <input type="text" name="brand"><br><br>
+		Model: <input type="text" name="model"><br><br>
+		<label for="pins">Number of pins:</label>
+		<select name="pins" id="pins">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+		</select><br><br>
+		<label for="securitypins">Has security pins:</label>
+		<select name="securitypins" id="securitypins">
+			<option value="true">Yes</option>
+			<option value="false">No</option>
+		</select><br><br>
+		<input type="submit" value="Add Padlock">
+	</form><br>
+	<a href = "viewAllPadlocksServlet">View the complete list</a>
+</body>
+</html>
